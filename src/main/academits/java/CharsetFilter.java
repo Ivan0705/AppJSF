@@ -19,7 +19,7 @@ public class CharsetFilter implements Filter {
         if (servletRequest.getCharacterEncoding() == null) {
             servletRequest.setCharacterEncoding(encoding);
         }
-        servletResponse.setContentType("index7/xhtml; charset=UTF-8");
+        servletResponse.setContentType("main/xhtml; charset=UTF-8");
         servletResponse.setCharacterEncoding("UTF-8");
 
         filterChain.doFilter(servletRequest, servletResponse);
